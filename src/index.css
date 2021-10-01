@@ -1,0 +1,103 @@
+:root{
+  --positiv-: rgb(52, 187, 40);
+  --negativ-: rgb(223, 1, 1);
+  --light_blue-:rgb(196, 243, 243);
+  --black-:rgb(0, 0, 0);
+}
+*{
+  background-color:var(--light_blue-);
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.positiv{
+  color: var(--positiv-);
+  font-weight: bold;
+}
+.negativ{
+  color: var(--negativ-);
+  font-weight: bold;
+}
+.button{
+  display: inline-block;
+  padding: 0.5%;
+  border-radius: 10px;
+  position: absolute;
+  right: 30%;
+  top: 4%;
+  border:2px solid var(--black-);
+  text-decoration:none;
+  color:black;
+}
+
+.button:hover{
+  cursor: pointer;
+  background-color: var(--black-);
+  color: var(--light_blue-);
+}
+h1{
+  margin-left:4%;
+  margin-top:3%;
+  display: inline-block;
+}
+h3,
+p{
+  font-weight: normal;
+  margin-left: 1%;
+  text-align: center;
+}
+#bitcoinPrice,
+#BitChange{
+  font-weight: bold;
+  font-size: 23px;
+}
+#sats{
+  font-size: 18px;
+  font-weight: bold;
+}
+#chart,
+#chart2{
+  height: 75%;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#footer{
+  text-align: left;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+#footer a{
+  text-decoration: none;
+  color:var(--black-);
+}
+#footer a:hover,
+#footer a:active{
+  text-decoration: underline;
+}
+
+@media screen and (max-width:36em) {
+  h1{
+    margin-left: 1%;
+
+  }
+  #chart,
+  #chart2{
+    height: 90%;
+    width: 90%;
+  }
+  .button{
+    right: 10%;
+  }
+}
